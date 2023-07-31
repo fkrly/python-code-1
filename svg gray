@@ -1,0 +1,6 @@
+import svgwrite 
+number=32
+name= str(number)+".svg"
+dwg = svgwrite.Drawing( name, size=('100%', '100%'), viewBox=('0 0 1000 1000'), preserveAspectRatio = "xMinYMin meet" )
+dwg.add(dwg.rect((0, 0), (1000, 1000), fill='#323232'))
+dwg.save()
